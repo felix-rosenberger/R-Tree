@@ -9,6 +9,7 @@ Created on Tue May 17 10:36:04 2022
 import sys
 import math
 import time
+import progressbar
 
 B = 20
 
@@ -16,7 +17,7 @@ def main():
     """This function reads in the dataset, initiates the R-Tree creation, executes range queries, and displays the results."""
     # read data in
     points = [] # keep track of number of points
-    n = 0 # set counter
+    n = 0 # set counter to keep track of number of data points
     with open("R_Tree_Data.txt", 'r') as dataset: 
         for data in dataset.readlines(): # each line in data set
             data = data.split() # split by space
@@ -31,15 +32,15 @@ def main():
     rtree = RTree() # initiate class
 
     print("Building the R-Tree: Please wait...\n")
- 
-    for point in points: # insert data points from the root one by one 
+    
+    for point in progressbar.progressbar(points): # insert data points from the root one by one, show progressbar to user while executing
         rtree.insert(rtree.root, point) # invoke insert algorithm from rtree class with root node and each point as parameter
    
     print("R-Tree construction completed\n")
 
     # read queries in from text file, same logic as above
     queries = []
-    with open("test_queries.txt", 'r') as querydata:
+    with open("R_Tree_Queries.txt", 'r') as querydata:
         for line in querydata.readlines():
             query = line.split()
             queries.append({
