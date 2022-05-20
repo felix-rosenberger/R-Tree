@@ -1,0 +1,519 @@
+Building the R-Tree: Please wait...
+
+R-Tree construction completed
+
+The current queries are
+{'x1': 17840, 'x2': 18840, 'y1': 13971, 'y2': 14971}
+{'x1': 33451, 'x2': 34451, 'y1': 29693, 'y2': 30693}
+{'x1': 791, 'x2': 1791, 'y1': 2515, 'y2': 3515}
+{'x1': 81921, 'x2': 82921, 'y1': 94973, 'y2': 95973}
+{'x1': 75678, 'x2': 76678, 'y1': 53545, 'y2': 54545}
+{'x1': 90965, 'x2': 91965, 'y1': 11078, 'y2': 12078}
+{'x1': 69904, 'x2': 70904, 'y1': 67308, 'y2': 68308}
+{'x1': 7187, 'x2': 8187, 'y1': 56997, 'y2': 57997}
+{'x1': 34375, 'x2': 35375, 'y1': 60942, 'y2': 61942}
+{'x1': 57144, 'x2': 58144, 'y1': 24954, 'y2': 25954}
+{'x1': 92689, 'x2': 93689, 'y1': 41529, 'y2': 42529}
+{'x1': 37632, 'x2': 38632, 'y1': 15609, 'y2': 16609}
+{'x1': 35578, 'x2': 36578, 'y1': 70910, 'y2': 71910}
+{'x1': 96034, 'x2': 97034, 'y1': 20504, 'y2': 21504}
+{'x1': 59420, 'x2': 60420, 'y1': 97747, 'y2': 98747}
+{'x1': 43505, 'x2': 44505, 'y1': 77261, 'y2': 78261}
+{'x1': 11718, 'x2': 12718, 'y1': 76956, 'y2': 77956}
+{'x1': 6953, 'x2': 7953, 'y1': 12509, 'y2': 13509}
+{'x1': 79472, 'x2': 80472, 'y1': 88875, 'y2': 89875}
+{'x1': 7481, 'x2': 8481, 'y1': 55149, 'y2': 56149}
+{'x1': 42419, 'x2': 43419, 'y1': 98446, 'y2': 99446}
+{'x1': 66228, 'x2': 67228, 'y1': 12323, 'y2': 13323}
+{'x1': 65753, 'x2': 66753, 'y1': 73415, 'y2': 74415}
+{'x1': 69320, 'x2': 70320, 'y1': 128, 'y2': 1128}
+{'x1': 34357, 'x2': 35357, 'y1': 26463, 'y2': 27463}
+{'x1': 25083, 'x2': 26083, 'y1': 27046, 'y2': 28046}
+{'x1': 67992, 'x2': 68992, 'y1': 62715, 'y2': 63715}
+{'x1': 42656, 'x2': 43656, 'y1': 3570, 'y2': 4570}
+{'x1': 33625, 'x2': 34625, 'y1': 38690, 'y2': 39690}
+{'x1': 24074, 'x2': 25074, 'y1': 93045, 'y2': 94045}
+{'x1': 36436, 'x2': 37436, 'y1': 67579, 'y2': 68579}
+{'x1': 70305, 'x2': 71305, 'y1': 48154, 'y2': 49154}
+{'x1': 44535, 'x2': 45535, 'y1': 77259, 'y2': 78259}
+{'x1': 60664, 'x2': 61664, 'y1': 24006, 'y2': 25006}
+{'x1': 66133, 'x2': 67133, 'y1': 68145, 'y2': 69145}
+{'x1': 79155, 'x2': 80155, 'y1': 8552, 'y2': 9552}
+{'x1': 66591, 'x2': 67591, 'y1': 45383, 'y2': 46383}
+{'x1': 20875, 'x2': 21875, 'y1': 32344, 'y2': 33344}
+{'x1': 18798, 'x2': 19798, 'y1': 90196, 'y2': 91196}
+{'x1': 32472, 'x2': 33472, 'y1': 53156, 'y2': 54156}
+{'x1': 16659, 'x2': 17659, 'y1': 57555, 'y2': 58555}
+{'x1': 80202, 'x2': 81202, 'y1': 84652, 'y2': 85652}
+{'x1': 20270, 'x2': 21270, 'y1': 22858, 'y2': 23858}
+{'x1': 88222, 'x2': 89222, 'y1': 53896, 'y2': 54896}
+{'x1': 61548, 'x2': 62548, 'y1': 12296, 'y2': 13296}
+{'x1': 46940, 'x2': 47940, 'y1': 97985, 'y2': 98985}
+{'x1': 79875, 'x2': 80875, 'y1': 17245, 'y2': 18245}
+{'x1': 46139, 'x2': 47139, 'y1': 24410, 'y2': 25410}
+{'x1': 94505, 'x2': 95505, 'y1': 6802, 'y2': 7802}
+{'x1': 48416, 'x2': 49416, 'y1': 60638, 'y2': 61638}
+{'x1': 74948, 'x2': 75948, 'y1': 27571, 'y2': 28571}
+{'x1': 69190, 'x2': 70190, 'y1': 41539, 'y2': 42539}
+{'x1': 72954, 'x2': 73954, 'y1': 90066, 'y2': 91066}
+{'x1': 73883, 'x2': 74883, 'y1': 91752, 'y2': 92752}
+{'x1': 80261, 'x2': 81261, 'y1': 6355, 'y2': 7355}
+{'x1': 44907, 'x2': 45907, 'y1': 96920, 'y2': 97920}
+{'x1': 63911, 'x2': 64911, 'y1': 25109, 'y2': 26109}
+{'x1': 81571, 'x2': 82571, 'y1': 84181, 'y2': 85181}
+{'x1': 47968, 'x2': 48968, 'y1': 69793, 'y2': 70793}
+{'x1': 38076, 'x2': 39076, 'y1': 9516, 'y2': 10516}
+{'x1': 82089, 'x2': 83089, 'y1': 85017, 'y2': 86017}
+{'x1': 7500, 'x2': 8500, 'y1': 61964, 'y2': 62964}
+{'x1': 2262, 'x2': 3262, 'y1': 53640, 'y2': 54640}
+{'x1': 86374, 'x2': 87374, 'y1': 96767, 'y2': 97767}
+{'x1': 60443, 'x2': 61443, 'y1': 34789, 'y2': 35789}
+{'x1': 57404, 'x2': 58404, 'y1': 35390, 'y2': 36390}
+{'x1': 62361, 'x2': 63361, 'y1': 26594, 'y2': 27594}
+{'x1': 76929, 'x2': 77929, 'y1': 35314, 'y2': 36314}
+{'x1': 16659, 'x2': 17659, 'y1': 50812, 'y2': 51812}
+{'x1': 27066, 'x2': 28066, 'y1': 96921, 'y2': 97921}
+{'x1': 57167, 'x2': 58167, 'y1': 71974, 'y2': 72974}
+{'x1': 93841, 'x2': 94841, 'y1': 21077, 'y2': 22077}
+{'x1': 97083, 'x2': 98083, 'y1': 75412, 'y2': 76412}
+{'x1': 5258, 'x2': 6258, 'y1': 45051, 'y2': 46051}
+{'x1': 45204, 'x2': 46204, 'y1': 43335, 'y2': 44335}
+{'x1': 54567, 'x2': 55567, 'y1': 27292, 'y2': 28292}
+{'x1': 28351, 'x2': 29351, 'y1': 62068, 'y2': 63068}
+{'x1': 89257, 'x2': 90257, 'y1': 30614, 'y2': 31614}
+{'x1': 15708, 'x2': 16708, 'y1': 75630, 'y2': 76630}
+{'x1': 27381, 'x2': 28381, 'y1': 76151, 'y2': 77151}
+{'x1': 10419, 'x2': 11419, 'y1': 84786, 'y2': 85786}
+{'x1': 11541, 'x2': 12541, 'y1': 72780, 'y2': 73780}
+{'x1': 11379, 'x2': 12379, 'y1': 88470, 'y2': 89470}
+{'x1': 8093, 'x2': 9093, 'y1': 28039, 'y2': 29039}
+{'x1': 39282, 'x2': 40282, 'y1': 35160, 'y2': 36160}
+{'x1': 24959, 'x2': 25959, 'y1': 96449, 'y2': 97449}
+{'x1': 7133, 'x2': 8133, 'y1': 18799, 'y2': 19799}
+{'x1': 17526, 'x2': 18526, 'y1': 4216, 'y2': 5216}
+{'x1': 94212, 'x2': 95212, 'y1': 22784, 'y2': 23784}
+{'x1': 49267, 'x2': 50267, 'y1': 39415, 'y2': 40415}
+{'x1': 66119, 'x2': 67119, 'y1': 3834, 'y2': 4834}
+{'x1': 66708, 'x2': 67708, 'y1': 94471, 'y2': 95471}
+{'x1': 65903, 'x2': 66903, 'y1': 55964, 'y2': 56964}
+{'x1': 25085, 'x2': 26085, 'y1': 81611, 'y2': 82611}
+{'x1': 31593, 'x2': 32593, 'y1': 52466, 'y2': 53466}
+{'x1': 57761, 'x2': 58761, 'y1': 42013, 'y2': 43013}
+{'x1': 37252, 'x2': 38252, 'y1': 69303, 'y2': 70303}
+{'x1': 14792, 'x2': 15792, 'y1': 48631, 'y2': 49631}
+{'x1': 57773, 'x2': 58773, 'y1': 22886, 'y2': 23886}
+{'x1': 76671, 'x2': 77671, 'y1': 97055, 'y2': 98055}
+The results for the sequential query are:
+
+For query 1 there are 15 data points included in the range query.
+
+For query 2 there are 13 data points included in the range query.
+
+For query 3 there are 9 data points included in the range query.
+
+For query 4 there are 8 data points included in the range query.
+
+For query 5 there are 8 data points included in the range query.
+
+For query 6 there are 8 data points included in the range query.
+
+For query 7 there are 12 data points included in the range query.
+
+For query 8 there are 10 data points included in the range query.
+
+For query 9 there are 9 data points included in the range query.
+
+For query 10 there are 11 data points included in the range query.
+
+For query 11 there are 11 data points included in the range query.
+
+For query 12 there are 6 data points included in the range query.
+
+For query 13 there are 6 data points included in the range query.
+
+For query 14 there are 10 data points included in the range query.
+
+For query 15 there are 6 data points included in the range query.
+
+For query 16 there are 8 data points included in the range query.
+
+For query 17 there are 10 data points included in the range query.
+
+For query 18 there are 10 data points included in the range query.
+
+For query 19 there are 11 data points included in the range query.
+
+For query 20 there are 7 data points included in the range query.
+
+For query 21 there are 11 data points included in the range query.
+
+For query 22 there are 9 data points included in the range query.
+
+For query 23 there are 4 data points included in the range query.
+
+For query 24 there are 8 data points included in the range query.
+
+For query 25 there are 11 data points included in the range query.
+
+For query 26 there are 12 data points included in the range query.
+
+For query 27 there are 7 data points included in the range query.
+
+For query 28 there are 13 data points included in the range query.
+
+For query 29 there are 9 data points included in the range query.
+
+For query 30 there are 9 data points included in the range query.
+
+For query 31 there are 8 data points included in the range query.
+
+For query 32 there are 7 data points included in the range query.
+
+For query 33 there are 9 data points included in the range query.
+
+For query 34 there are 9 data points included in the range query.
+
+For query 35 there are 10 data points included in the range query.
+
+For query 36 there are 13 data points included in the range query.
+
+For query 37 there are 9 data points included in the range query.
+
+For query 38 there are 6 data points included in the range query.
+
+For query 39 there are 8 data points included in the range query.
+
+For query 40 there are 13 data points included in the range query.
+
+For query 41 there are 12 data points included in the range query.
+
+For query 42 there are 8 data points included in the range query.
+
+For query 43 there are 8 data points included in the range query.
+
+For query 44 there are 11 data points included in the range query.
+
+For query 45 there are 11 data points included in the range query.
+
+For query 46 there are 10 data points included in the range query.
+
+For query 47 there are 8 data points included in the range query.
+
+For query 48 there are 8 data points included in the range query.
+
+For query 49 there are 12 data points included in the range query.
+
+For query 50 there are 5 data points included in the range query.
+
+For query 51 there are 7 data points included in the range query.
+
+For query 52 there are 4 data points included in the range query.
+
+For query 53 there are 6 data points included in the range query.
+
+For query 54 there are 13 data points included in the range query.
+
+For query 55 there are 9 data points included in the range query.
+
+For query 56 there are 9 data points included in the range query.
+
+For query 57 there are 7 data points included in the range query.
+
+For query 58 there are 10 data points included in the range query.
+
+For query 59 there are 16 data points included in the range query.
+
+For query 60 there are 4 data points included in the range query.
+
+For query 61 there are 11 data points included in the range query.
+
+For query 62 there are 6 data points included in the range query.
+
+For query 63 there are 6 data points included in the range query.
+
+For query 64 there are 16 data points included in the range query.
+
+For query 65 there are 14 data points included in the range query.
+
+For query 66 there are 8 data points included in the range query.
+
+For query 67 there are 11 data points included in the range query.
+
+For query 68 there are 10 data points included in the range query.
+
+For query 69 there are 7 data points included in the range query.
+
+For query 70 there are 16 data points included in the range query.
+
+For query 71 there are 13 data points included in the range query.
+
+For query 72 there are 11 data points included in the range query.
+
+For query 73 there are 10 data points included in the range query.
+
+For query 74 there are 7 data points included in the range query.
+
+For query 75 there are 10 data points included in the range query.
+
+For query 76 there are 9 data points included in the range query.
+
+For query 77 there are 10 data points included in the range query.
+
+For query 78 there are 11 data points included in the range query.
+
+For query 79 there are 6 data points included in the range query.
+
+For query 80 there are 11 data points included in the range query.
+
+For query 81 there are 10 data points included in the range query.
+
+For query 82 there are 8 data points included in the range query.
+
+For query 83 there are 9 data points included in the range query.
+
+For query 84 there are 10 data points included in the range query.
+
+For query 85 there are 20 data points included in the range query.
+
+For query 86 there are 8 data points included in the range query.
+
+For query 87 there are 8 data points included in the range query.
+
+For query 88 there are 12 data points included in the range query.
+
+For query 89 there are 7 data points included in the range query.
+
+For query 90 there are 9 data points included in the range query.
+
+For query 91 there are 5 data points included in the range query.
+
+For query 92 there are 14 data points included in the range query.
+
+For query 93 there are 11 data points included in the range query.
+
+For query 94 there are 5 data points included in the range query.
+
+For query 95 there are 6 data points included in the range query.
+
+For query 96 there are 11 data points included in the range query.
+
+For query 97 there are 11 data points included in the range query.
+
+For query 98 there are 15 data points included in the range query.
+
+For query 99 there are 8 data points included in the range query.
+
+For query 100 there are 14 data points included in the range query.
+
+The total sequential query time is 0.8510627746582031 seconds.
+
+The average sequential query time is 0.008510627746582032 seconds.
+
+The results for the R-Tree query are:
+
+For query 1 there are 15 data points included in the range query.
+
+For query 2 there are 13 data points included in the range query.
+
+For query 3 there are 9 data points included in the range query.
+
+For query 4 there are 8 data points included in the range query.
+
+For query 5 there are 8 data points included in the range query.
+
+For query 6 there are 8 data points included in the range query.
+
+For query 7 there are 12 data points included in the range query.
+
+For query 8 there are 10 data points included in the range query.
+
+For query 9 there are 9 data points included in the range query.
+
+For query 10 there are 11 data points included in the range query.
+
+For query 11 there are 11 data points included in the range query.
+
+For query 12 there are 6 data points included in the range query.
+
+For query 13 there are 6 data points included in the range query.
+
+For query 14 there are 10 data points included in the range query.
+
+For query 15 there are 6 data points included in the range query.
+
+For query 16 there are 8 data points included in the range query.
+
+For query 17 there are 10 data points included in the range query.
+
+For query 18 there are 10 data points included in the range query.
+
+For query 19 there are 11 data points included in the range query.
+
+For query 20 there are 7 data points included in the range query.
+
+For query 21 there are 11 data points included in the range query.
+
+For query 22 there are 9 data points included in the range query.
+
+For query 23 there are 4 data points included in the range query.
+
+For query 24 there are 8 data points included in the range query.
+
+For query 25 there are 11 data points included in the range query.
+
+For query 26 there are 12 data points included in the range query.
+
+For query 27 there are 7 data points included in the range query.
+
+For query 28 there are 13 data points included in the range query.
+
+For query 29 there are 9 data points included in the range query.
+
+For query 30 there are 9 data points included in the range query.
+
+For query 31 there are 8 data points included in the range query.
+
+For query 32 there are 7 data points included in the range query.
+
+For query 33 there are 9 data points included in the range query.
+
+For query 34 there are 9 data points included in the range query.
+
+For query 35 there are 10 data points included in the range query.
+
+For query 36 there are 13 data points included in the range query.
+
+For query 37 there are 9 data points included in the range query.
+
+For query 38 there are 6 data points included in the range query.
+
+For query 39 there are 8 data points included in the range query.
+
+For query 40 there are 13 data points included in the range query.
+
+For query 41 there are 12 data points included in the range query.
+
+For query 42 there are 8 data points included in the range query.
+
+For query 43 there are 8 data points included in the range query.
+
+For query 44 there are 11 data points included in the range query.
+
+For query 45 there are 11 data points included in the range query.
+
+For query 46 there are 10 data points included in the range query.
+
+For query 47 there are 8 data points included in the range query.
+
+For query 48 there are 8 data points included in the range query.
+
+For query 49 there are 12 data points included in the range query.
+
+For query 50 there are 5 data points included in the range query.
+
+For query 51 there are 7 data points included in the range query.
+
+For query 52 there are 4 data points included in the range query.
+
+For query 53 there are 6 data points included in the range query.
+
+For query 54 there are 13 data points included in the range query.
+
+For query 55 there are 9 data points included in the range query.
+
+For query 56 there are 9 data points included in the range query.
+
+For query 57 there are 7 data points included in the range query.
+
+For query 58 there are 10 data points included in the range query.
+
+For query 59 there are 16 data points included in the range query.
+
+For query 60 there are 4 data points included in the range query.
+
+For query 61 there are 11 data points included in the range query.
+
+For query 62 there are 6 data points included in the range query.
+
+For query 63 there are 6 data points included in the range query.
+
+For query 64 there are 16 data points included in the range query.
+
+For query 65 there are 14 data points included in the range query.
+
+For query 66 there are 8 data points included in the range query.
+
+For query 67 there are 11 data points included in the range query.
+
+For query 68 there are 10 data points included in the range query.
+
+For query 69 there are 7 data points included in the range query.
+
+For query 70 there are 16 data points included in the range query.
+
+For query 71 there are 13 data points included in the range query.
+
+For query 72 there are 11 data points included in the range query.
+
+For query 73 there are 10 data points included in the range query.
+
+For query 74 there are 7 data points included in the range query.
+
+For query 75 there are 10 data points included in the range query.
+
+For query 76 there are 9 data points included in the range query.
+
+For query 77 there are 10 data points included in the range query.
+
+For query 78 there are 11 data points included in the range query.
+
+For query 79 there are 6 data points included in the range query.
+
+For query 80 there are 11 data points included in the range query.
+
+For query 81 there are 10 data points included in the range query.
+
+For query 82 there are 8 data points included in the range query.
+
+For query 83 there are 9 data points included in the range query.
+
+For query 84 there are 10 data points included in the range query.
+
+For query 85 there are 20 data points included in the range query.
+
+For query 86 there are 8 data points included in the range query.
+
+For query 87 there are 8 data points included in the range query.
+
+For query 88 there are 12 data points included in the range query.
+
+For query 89 there are 7 data points included in the range query.
+
+For query 90 there are 9 data points included in the range query.
+
+For query 91 there are 5 data points included in the range query.
+
+For query 92 there are 14 data points included in the range query.
+
+For query 93 there are 11 data points included in the range query.
+
+For query 94 there are 5 data points included in the range query.
+
+For query 95 there are 6 data points included in the range query.
+
+For query 96 there are 11 data points included in the range query.
+
+For query 97 there are 11 data points included in the range query.
+
+For query 98 there are 15 data points included in the range query.
+
+For query 99 there are 8 data points included in the range query.
+
+For query 100 there are 14 data points included in the range query.
+
+The total R-Tree query time is 0.011238813400268555 seconds.
+
+The average R-Tree query time is 0.00011238813400268554 seconds.
+
+The R-Tree query algorithm is 75.72532298097117 times faster than the standard sequential query.
+
