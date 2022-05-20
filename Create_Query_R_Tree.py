@@ -10,7 +10,7 @@ import sys
 import math
 import time
 
-B = 4
+B = 20
 
 def main():
     """This function reads in the dataset, initiates the R-Tree creation, executes range queries, and displays the results."""
@@ -25,24 +25,19 @@ def main():
                 'x': int(data[1]),
                 'y': int(data[2])
                    }) # create dictionary where id and coordinates are defined and each line is appended accordingly
-            print("id=",(points[n]['id']), "x=", (points[n]['x']), "y=", (points[n]['y']))
             n += 1 # increment counter with each line
 
     # build R-Tree
     rtree = RTree() # initiate class
 
     print("Building the R-Tree: Please wait...\n")
-    R_Tree_start = time.time() # store the number of seconds passed since epoch before Rtree is built
  
     for point in points: # insert data points from the root one by one 
-        rtree.insert(rtree.root, point) 
+        rtree.insert(rtree.root, point) # invoke insert algorithm from rtree class with root node and each point as parameter
    
-    R_Tree_end = time.time() # store the number of seconds passed since epoch after Rtree is built
-    build_time = R_Tree_end - R_Tree_start # calculate time required to build Rtree
     print("R-Tree construction completed\n")
-    print("The time-cost of building up the R-Tree is", build_time, "seconds.\n")
 
-    # read queries in from text file
+    # read queries in from text file, same logic as above
     queries = []
     with open("test_queries.txt", 'r') as querydata:
         for line in querydata.readlines():
@@ -53,18 +48,21 @@ def main():
                 'y1': int(query[2]),
                 'y2': int(query[3])
             })
-    print("The current query is", queries)
+    print("The current queries are", *queries, sep="\n") # prints queries in table format
     
     # execute sequential query and store the number of points found
     seq_results =  []
-    sequential_query_start = time.time()
-    for point in points:
-        for query in queries:
+    sequential_query_start = time.time() # store the number of seconds passed since epoch before query execution
+    for query in queries: # for each query, iterate through all points and check whether they lie within the query
+        count = 0 # set counter to zero
+        for point in points:
             if query["x1"] <= point["x"] <= query["x2"] and query["y1"] <= point["y"] <= query["y2"]:
-                seq_results.append(point)
-    sequential_query_end = time.time()
-    seq_query_processing_time = sequential_query_end - sequential_query_start
-    seq_query_avg_processing_time = seq_query_processing_time/len(seq_results)
+                count += 1 # increment counter if a point lies within query
+        seq_results.append(count) # append the sum of all points found per query to results
+        
+    sequential_query_end = time.time() # store the number of seconds passed since epoch after query execution
+    seq_query_processing_time = sequential_query_end - sequential_query_start # calculate time required to run all queries
+    seq_query_avg_processing_time = seq_query_processing_time/len(seq_results) # calculate average processing time per query
     
     print("The results for the sequential query are:\n")
     seq_query_num = 1
@@ -92,7 +90,7 @@ def main():
         
     print("The total R-Tree query time is", tree_query_processing_time, "seconds.\n")
     print("The average R-Tree query time is", tree_avg_processing_time, "seconds.\n")
-    efficiency = seq_query_processing_time/tree_query_processing_time
+    efficiency = seq_query_processing_time/tree_query_processing_time # calculate how much faster i.e. more efficient the R-Tree query algorithm is compared to sequential query
     print("The R-Tree query algorithm is", efficiency, "times faster than the standard sequential query.\n")
 
 class Node(object): # node class
