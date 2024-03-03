@@ -4,12 +4,3 @@ This repository contains the input files and program for building up an R-Tree f
 
 ## Goals and Outcomes
 The goal of an R-Tree implementation is to efficiently query large amounts of data, compared to naively querying the data where each data point has to be accessed by a search algorithm. In this program, both options are tested and the R-Tree approach achieves the result 75 times faster than the naive approach.
-
-## Libraries used
-```
-import sys
-import math
-import time
-import progressbar
-```
-
